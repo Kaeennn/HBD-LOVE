@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy Birthday, My Love!</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Happy Birthday Love</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>🎉 Happy Birthday, My Love!, Ikong!! 🎉</h1>
+    <h1>Happy Birthday, Love! 🎉</h1>
 
-    <button id="revealBtn">Click here for your surprise 💝</button>
-
-    <div id="surpriseContent" class="hidden">
-      <div class="media-section">
-        <img id="leftImage" src=""C:\Users\User\Desktop\HBD LOVE\images\1.jpg"" alt="Love Left" class="side-image"/>
-        
-        <video id="loveVideo" controls autoplay loop muted>
-          <source src="C:\Users\User\Desktop\HBD LOVE\video\lovey.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        
-        <img id="rightImage" src="C:\Users\User\Desktop\HBD LOVE\images\4.jpg" alt="Love Right" class="side-image"/>
-      </div>
-
-      <p id="randomMessage">You're my everything 💖</p>
-      <button id="newSurpriseBtn">Show Another Surprise ✨</button>
+    <div class="gallery">
+      <img src="images/1.jpg" alt="Photo 1">
+      <img src="images/2.jpg" alt="Photo 2">
+      <img src="images/3.jpg" alt="Photo 3">
+      <img src="images/4.jpg" alt="Photo 4">
+      <img src="images/5.jpg" alt="Photo 5">
+      <img src="images/6.jpg" alt="Photo 6">
     </div>
+
+    <div class="video-container">
+      <h2>Watch This!</h2>
+      <video width="480" controls>
+        <source src="video/lovey.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <button onclick="showMessage()">Click Me!</button>
+    <p id="message"></p>
   </div>
 
   <script src="script.js"></script>
